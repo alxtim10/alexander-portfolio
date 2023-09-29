@@ -8,6 +8,7 @@ import HomeTitle from "@/components/home/HomeTitle";
 import AboutMe from "@/components/about/AboutMe";
 import HeadMetaData from "@/components/headmetadata/HeadMetaData";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const mainRef = useRef();
@@ -232,11 +233,15 @@ export default function Home() {
               <div className="w-[25rem]">
                 <div className="overflow-hidden hover:brightness-75 transition-all duration-300 rounded-lg">
                   <Link href="/projects">
-                    <img
-                      src="/images/projects/1.png"
-                      alt=""
-                      className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg h-[8rem] w-[12rem] md:h-[10rem] md:w-auto xl:h-[15rem] bg-gradient-to-br from-blue-300 to-gray-300"
-                    />
+                    <div className="relative h-[8rem] w-[15rem] md:h-[10rem] md:w-[18rem] xl:h-[15rem] xl:w-[25rem]">
+                      <Image
+                        src="/images/projects/1.png"
+                        alt="SkenaHub"
+                        layout="fill"
+                        objectFit="cover"
+                        className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg  bg-gradient-to-br from-blue-300 to-gray-300"
+                      />
+                    </div>
                   </Link>
                 </div>
                 <p className="mt-2 text-left">Skena Hub</p>
@@ -247,16 +252,20 @@ export default function Home() {
               offset={projectStart + 0.6}
               speed={0.25}
               factor={1}
-              className="bg-transparent ml-44 md:ml-[25rem] lg:ml-[40rem] xl:ml-[55rem] 2xl:ml-[80rem]"
+              className="flex justify-end bg-transparent ml-32 md:ml-20 lg:ml-14 xl:-ml-10 2xl:-ml-20"
             >
               <div className="w-[25rem]">
                 <div className="overflow-hidden hover:brightness-75 transition-all duration-300 rounded-lg">
                   <Link href="/projects">
-                    <img
-                      src="/images/projects/projectG1.png"
-                      alt=""
-                      className="cursor-pointer lg:p-2  transition-all duration-300 rounded-lg h-[8rem] w-[12rem] md:h-[10rem] xl:h-[15rem] md:w-auto bg-gradient-to-br from-orange-200 to-blue-200"
-                    />
+                    <div className="relative h-[8rem] w-[15rem] md:h-[10rem] md:w-[18rem] xl:h-[15rem] xl:w-[25rem]">
+                      <Image
+                        src="/images/projects/projectG1.png"
+                        alt="GuitarCave"
+                        layout="fill"
+                        objectFit="cover"
+                        className="cursor-pointer lg:p-2  transition-all duration-300 rounded-lg bg-gradient-to-br from-orange-200 to-blue-200"
+                      />
+                    </div>
                   </Link>
                 </div>
                 <p className="mt-2 text-left">Guitar Cave</p>
@@ -272,11 +281,15 @@ export default function Home() {
               <div className="w-[25rem]">
                 <div className="overflow-hidden hover:brightness-75 transition-all duration-300 rounded-lg">
                   <Link href="/projects">
-                    <img
-                      src="/images/projects/3.png"
-                      alt=""
-                      className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg h-[8rem] w-[12rem] md:h-[10rem] xl:h-[15rem] md:w-auto bg-gradient-to-bl from-yellow-200 to-gray-400"
-                    />
+                    <div className="relative h-[8rem] w-[15rem] md:h-[10rem] md:w-[18rem] xl:h-[15rem] xl:w-[25rem]">
+                      <Image
+                        src="/images/projects/3.png"
+                        alt="SIMUDAGuestBook"
+                        layout="fill"
+                        objectFit="cover"
+                        className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg bg-gradient-to-bl from-yellow-200 to-gray-400"
+                      />
+                    </div>
                   </Link>
                 </div>
                 <p className="mt-2 text-left">SIMUDA Guest Book</p>
@@ -292,11 +305,15 @@ export default function Home() {
               <div className="w-[25rem]">
                 <div className="overflow-hidden hover:brightness-75 transition-all duration-300 rounded-lg">
                   <Link href="/projects">
-                    <img
-                      src="/images/projects/full.png"
-                      alt=""
-                      className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg h-[6rem] w-[12rem] md:h-[10rem] xl:h-[13rem] md:w-auto bg-gradient-to-tr from-orange-300 to-gray-300"
-                    />
+                    <div className="relative h-[8rem] w-[15rem] md:h-[10rem] md:w-[18rem] xl:h-[15rem] xl:w-[25rem]">
+                      <Image
+                        src="/images/projects/full.png"
+                        alt="AngklungBeats"
+                        layout="fill"
+                        objectFit="cover"
+                        className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg bg-gradient-to-tr from-orange-300 to-gray-300"
+                      />
+                    </div>
                   </Link>
                 </div>
                 <p className="mt-2 text-left">Angklung Beats</p>
@@ -318,51 +335,87 @@ export default function Home() {
                       Front End
                     </h1>
                     <div className="flex flex-wrap justify-center lg:justify-start items-center gap-5">
-                      <img
-                        src="/images/stackimg/atom.png"
-                        alt=""
-                        className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                      />
-                      <img
-                        src="/images/stackimg/nextjs.png"
-                        alt=""
-                        className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                      />
-                      <img
-                        src="/images/stackimg/tailwind.png"
-                        alt=""
-                        className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                      />
-                      <img
-                        src="/images/stackimg/angular.png"
-                        alt=""
-                        className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                      />
-                      <img
-                        src="/images/stackimg/laravel.png"
-                        alt=""
-                        className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                      />
-                      <img
-                        src="/images/stackimg/html.png"
-                        alt=""
-                        className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                      />
-                      <img
-                        src="/images/stackimg/css.png"
-                        alt=""
-                        className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                      />
-                      <img
-                        src="/images/stackimg/javascript.png"
-                        alt=""
-                        className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                      />
-                      <img
-                        src="/images/stackimg/typescript.png"
-                        alt=""
-                        className="h-16 hover:scale-110 transition-all duration-300 cursor-pointer"
-                      />
+                      <div className="relative w-20 h-20">
+                        <Image
+                          src="/images/stackimg/atom.png"
+                          alt="react"
+                          layout="fill"
+                          objectFit="contain"
+                          className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                        />
+                      </div>
+                      <div className="relative w-20 h-20">
+                        <Image
+                          src="/images/stackimg/nextjs.png"
+                          alt="nextjs"
+                          layout="fill"
+                          objectFit="contain"
+                          className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                        />
+                      </div>
+                      <div className="relative w-20 h-20">
+                        <Image
+                          src="/images/stackimg/tailwind.png"
+                          alt="tailwindcss"
+                          layout="fill"
+                          objectFit="contain"
+                          className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                        />
+                      </div>
+                      <div className="relative w-20 h-20">
+                        <Image
+                          src="/images/stackimg/angular.png"
+                          alt="angular"
+                          layout="fill"
+                          objectFit="contain"
+                          className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                        />
+                      </div>
+                      <div className="relative w-20 h-20">
+                        <Image
+                          src="/images/stackimg/laravel.png"
+                          alt="laravel"
+                          layout="fill"
+                          objectFit="contain"
+                          className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                        />
+                      </div>
+                      <div className="relative w-20 h-20">
+                        <Image
+                          src="/images/stackimg/html.png"
+                          alt="html"
+                          layout="fill"
+                          objectFit="contain"
+                          className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                        />
+                      </div>
+                      <div className="relative w-20 h-20">
+                        <Image
+                          src="/images/stackimg/css.png"
+                          alt="css"
+                          layout="fill"
+                          objectFit="contain"
+                          className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                        />
+                      </div>
+                      <div className="relative w-20 h-20">
+                        <Image
+                          src="/images/stackimg/javascript.png"
+                          alt="js"
+                          layout="fill"
+                          objectFit="contain"
+                          className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                        />
+                      </div>
+                      <div className="relative w-16 h-16">
+                        <Image
+                          src="/images/stackimg/typescript.png"
+                          alt="ts"
+                          layout="fill"
+                          objectFit="contain"
+                          className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                        />
+                      </div>
                     </div>
                   </div>
                   <div className="opacity-50 mt-5 hover:opacity-100 h-full xl:h-[22rem] 2xl:h-[21rem] bg-none w-[20rem] lg:w-1/2 border-b-4 grayscale hover:grayscale-0 hover:border-b-[10px] transition-all duration-500 border-white">
@@ -371,28 +424,44 @@ export default function Home() {
                     </h1>
                     <div className="flex flex-col items-center">
                       <div className="flex flex-wrap items-center gap-5">
-                        <img
-                          src="/images/stackimg/net.png"
-                          alt=""
-                          className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                        />
-                        <img
-                          src="/images/stackimg/express.png"
-                          alt=""
-                          className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                        />
+                        <div className="relative w-20 h-20">
+                          <Image
+                            src="/images/stackimg/net.png"
+                            alt="net"
+                            layout="fill"
+                            objectFit="contain"
+                            className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          />
+                        </div>
+                        <div className="relative w-20 h-20">
+                          <Image
+                            src="/images/stackimg/express.png"
+                            alt="express"
+                            layout="fill"
+                            objectFit="contain"
+                            className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          />
+                        </div>
                       </div>
                       <div className="flex flex-wrap items-center gap-5">
-                        <img
-                          src="/images/stackimg/laravel.png"
-                          alt=""
-                          className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                        />
-                        <img
-                          src="/images/stackimg/nodejs.png"
-                          alt=""
-                          className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                        />
+                        <div className="relative w-20 h-20">
+                          <Image
+                            src="/images/stackimg/laravel.png"
+                            alt="laravel"
+                            layout="fill"
+                            objectFit="contain"
+                            className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          />
+                        </div>
+                        <div className="relative w-20 h-20">
+                          <Image
+                            src="/images/stackimg/nodejs.png"
+                            alt="nodejs"
+                            layout="fill"
+                            objectFit="contain"
+                            className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -402,28 +471,44 @@ export default function Home() {
                     </h1>
                     <div className="flex flex-col items-center">
                       <div className="flex flex-wrap justify-end items-center gap-5">
-                        <img
-                          src="/images/stackimg/postgresql.png"
-                          alt=""
-                          className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                        />
-                        <img
-                          src="/images/stackimg/mysql.png"
-                          alt=""
-                          className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                        />
+                        <div className="relative w-20 h-20">
+                          <Image
+                            src="/images/stackimg/postgresql.png"
+                            alt="postgresql"
+                            layout="fill"
+                            objectFit="contain"
+                            className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          />
+                        </div>
+                        <div className="relative w-20 h-20">
+                          <Image
+                            src="/images/stackimg/mysql.png"
+                            alt="mysql"
+                            layout="fill"
+                            objectFit="contain"
+                            className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          />
+                        </div>
                       </div>
                       <div className="flex flex-wrap justify-end items-center gap-5">
-                        <img
-                          src="/images/stackimg/firebase.png"
-                          alt=""
-                          className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                        />
-                        <img
-                          src="/images/stackimg/mongodb.png"
-                          alt=""
-                          className="h-20 hover:scale-110 transition-all duration-300 cursor-pointer"
-                        />
+                        <div className="relative w-20 h-20">
+                          <Image
+                            src="/images/stackimg/firebase.png"
+                            alt="firebase"
+                            layout="fill"
+                            objectFit="contain"
+                            className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          />
+                        </div>
+                        <div className="relative w-20 h-20">
+                          <Image
+                            src="/images/stackimg/mongodb.png"
+                            alt="mongodb"
+                            layout="fill"
+                            objectFit="contain"
+                            className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -437,18 +522,26 @@ export default function Home() {
                   </a>
                   <div className="flex justify-center items-center gap-5 bg-[#303030] py-2 px-3 rounded-lg w-32 mt-2">
                     <a href="https://www.linkedin.com/in/alxtim/">
-                      <img
-                        src="/images/footer/linkedin.png"
-                        alt=""
-                        className="h-8 grayscale hover:grayscale-0 hover:scale-105 transition-all cursor-pointer"
-                      />
+                      <div className="relative w-8 h-8">
+                        <Image
+                          src="/images/footer/linkedin.png"
+                          alt="linkedin"
+                          layout="fill"
+                          objectFit="contain"
+                          className="grayscale hover:grayscale-0 hover:scale-105 transition-all cursor-pointer"
+                        />
+                      </div>
                     </a>
                     <a href="https://github.com/alxtim10">
-                      <img
-                        src="/images/footer/github.png"
-                        alt=""
-                        className="h-9 grayscale hover:grayscale-0 hover:scale-105 transition-all cursor-pointer"
-                      />
+                      <div className="relative w-9 h-9">
+                        <Image
+                          src="/images/footer/github.png"
+                          alt="github"
+                          layout="fill"
+                          objectFit="contain"
+                          className="grayscale hover:grayscale-0 hover:scale-105 transition-all cursor-pointer"
+                        />
+                      </div>
                     </a>
                   </div>
                 </div>

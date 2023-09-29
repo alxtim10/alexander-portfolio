@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const AboutMe = () => {
@@ -17,11 +18,15 @@ const AboutMe = () => {
           Keen to contribute technical expertise and drive innovation in a
           professional setting.
         </p>
-        <img
-          src="/images/foto.jpg"
-          alt=""
-          className="shadow-xl h-60 md:h-80 rounded-xl"
-        />
+        <div className="relative w-40 h-60 md:h-80 md:w-60">
+          <Image
+            src="/images/foto.jpg"
+            alt="profile"
+            layout="fill"
+            objectFit="cover"
+            className="shadow-xl rounded-xl"
+          />
+        </div>
       </div>
     </>
   );
