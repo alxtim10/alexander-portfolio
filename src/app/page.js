@@ -8,9 +8,9 @@ import HomeTitle from "@/components/home/HomeTitle";
 import AboutMe from "@/components/about/AboutMe";
 
 export default function Home() {
-  const ref = useRef();
+  const mainRef = useRef();
 
-  const exerienceData = [
+  const experienceData = [
     {
       title: "Full Stack Developer Volunteer",
       place: "GKI Grand Wisata",
@@ -44,10 +44,8 @@ export default function Home() {
   const experienceDuration = 1.4;
   const projectDuration = 1;
   const skillsDuration = 1.1;
-
   const buffer = 1;
 
-  // computed values, with buffer
   const introStart = start + 0;
   const experienceStart = introStart + introDuration + buffer;
   const projectStart = experienceStart + experienceDuration + buffer;
@@ -59,11 +57,12 @@ export default function Home() {
   return (
     <main className="w-full ">
       <div className="">
-        <Parallax pages={totalDuration} ref={ref}>
+        <Parallax pages={totalDuration} ref={mainRef}>
           <ParallaxLayer
-            offset={introStart}
+            sticky={{ start: introStart, end: introStart + 1.1 }}
             factor={1.05}
-            className="bg-gradient-to-b from-[#e8e8e8] to-[#7d7d7d]"
+            // className="bg-gradient-to-b from-[#e8e8e8] to-[#7d7d7d]"
+            className="bg-[url('/images/bg3.png')] z-[-90] bg-cover bg-center"
           ></ParallaxLayer>
 
           <ParallaxLayer
@@ -71,14 +70,19 @@ export default function Home() {
             speed={0.4}
             className="flex flex-col justify-end pb-20"
           >
-            <HomeTitle />
+            <HomeTitle
+              mainRef={mainRef}
+              experienceStart={experienceStart}
+              skillsStart={skillsStart}
+            />
           </ParallaxLayer>
 
           <ParallaxLayer
-            offset={introStart + 1}
+            sticky={{ start: introStart + 1, end: introStart + 3 }}
             factor={2.75}
             speed={0.05}
-            className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
+            // className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
+            className="bg-[url('/images/bg2.png')] z-[-100] bg-cover bg-center"
           ></ParallaxLayer>
 
           <ParallaxLayer
@@ -156,6 +160,22 @@ export default function Home() {
           </ParallaxLayer>
 
           <ParallaxLayer
+            sticky={{ start: introStart + 3, end: experienceStart + 1.3 }}
+            factor={2.75}
+            speed={0.05}
+            // className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
+            className="bg-[url('/images/bg4.png')] z-[-100] bg-cover bg-center"
+          ></ParallaxLayer>
+
+          <ParallaxLayer
+            sticky={{ start: experienceStart + 1, end: projectStart + projectDuration }}
+            factor={2.75}
+            speed={0.05}
+            // className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
+            className="bg-[url('/images/bg5.png')] z-[-110] bg-cover bg-center"
+          ></ParallaxLayer>
+
+          <ParallaxLayer
             sticky={{
               start: experienceStart + 0.75,
               end: experienceStart + 0.95,
@@ -176,7 +196,7 @@ export default function Home() {
           >
             <section className="flex justify-center p-10 mb-5 mx-4 bg-[#303030] rounded-xl">
               <div className="-my-6">
-                {exerienceData.map((data) => {
+                {experienceData.map((data) => {
                   return <ExCard key={data.title} data={data} />;
                 })}
               </div>
@@ -189,7 +209,7 @@ export default function Home() {
               end: projectStart + projectDuration,
             }}
             className="p-5 mx-auto flex justify-center items-center"
-            style={{ maxWidth: "52em", zIndex: -100 }}
+            style={{ maxWidth: "52em", zIndex: -75 }}
           >
             <h1 className="text-2xl lg:text-6xl text-center w-100 text-white">
               projects
@@ -216,7 +236,7 @@ export default function Home() {
 
           <ParallaxLayer
             offset={projectStart + 0.6}
-            speed={0.65}
+            speed={0.25}
             factor={1}
             className="bg-transparent ml-44 md:ml-[25rem] lg:ml-[40rem] xl:ml-[55rem] 2xl:ml-[80rem]"
           >
@@ -396,7 +416,7 @@ export default function Home() {
               <div className="flex flex-col justify-center items-center w-full mt-10 xl:mt-32 mb-5">
                 <a
                   href="mailto:alxtim10@gmail.com"
-                  className="hover:underlinemb-2 text-center"
+                  className="hover:underlinemb-2 text-center text-white"
                 >
                   alxtim10@gmail.com
                 </a>

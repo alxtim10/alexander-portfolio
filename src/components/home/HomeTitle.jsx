@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const HomeTitle = () => {
+const HomeTitle = ({mainRef, experienceStart, skillsStart}) => {
   return (
     <>
       <div className="flex justify-around items-center font-outfit mx-8 ">
@@ -23,7 +23,7 @@ const HomeTitle = () => {
         </Link>
         <div className="flex gap-5">
           <h1
-            // onClick={() => scrollToSection(experienceRef)}
+            onClick={() => mainRef.current.scrollTo(experienceStart + 0.9)}
             className="cursor-pointer hover:-translate-x-2 hover:translate-y-2 hover:text-gray-400 transition-all duration-300"
           >
             experience
@@ -34,7 +34,7 @@ const HomeTitle = () => {
             </h1>
           </Link>
           <h1
-            // onClick={() => scrollToSection(skillsRef)}
+            onClick={() => mainRef.current.scrollTo(skillsStart - 0.1)}
             className="cursor-pointer hover:-translate-x-2 hover:translate-y-2 hover:text-gray-400 transition-all duration-300"
           >
             skills
