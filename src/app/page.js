@@ -40,7 +40,7 @@ export default function Home() {
   ];
 
   const start = 0;
-  const introDuration = 3;
+  const introDuration = 4;
   const experienceDuration = 1.4;
   const projectDuration = 1;
   const skillsDuration = 1.1;
@@ -90,7 +90,7 @@ export default function Home() {
           </ParallaxLayer>
 
           <ParallaxLayer
-            sticky={{ start: introStart + 2.15, end: introStart + 2.5 }}
+            sticky={{ start: introStart + 2.15, end: introStart + 3 }}
             className="flex-center"
             style={{ width: "33%" }}
           >
@@ -112,7 +112,7 @@ export default function Home() {
           </ParallaxLayer>
 
           <ParallaxLayer
-            sticky={{ start: introStart + 2.75, end: introStart + 3 }}
+            sticky={{ start: introStart + 2.75, end: introStart + 3.5 }}
             className="flex-center"
             style={{ width: "34%", marginLeft: "33%" }}
           >
@@ -134,7 +134,7 @@ export default function Home() {
           </ParallaxLayer>
 
           <ParallaxLayer
-            sticky={{ start: introStart + 3, end: introStart + 3.5 }}
+            sticky={{ start: introStart + 3, end: introStart + 4 }}
             className="flex-center"
             style={{ width: "33%", marginLeft: "67%" }}
           >
@@ -174,7 +174,7 @@ export default function Home() {
             style={{ zIndex: 5 }}
             className="flex justify-center items-center"
           >
-            <section className="flex justify-center p-10 mb-5 mx-2 bg-[#303030] rounded-xl">
+            <section className="flex justify-center p-10 mb-5 mx-4 bg-[#303030] rounded-xl">
               <div className="-my-6">
                 {exerienceData.map((data) => {
                   return <ExCard key={data.title} data={data} />;
@@ -393,7 +393,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col justify-center items-center w-full mt-10 xl:mt-32">
+              <div className="flex flex-col justify-center items-center w-full mt-10 xl:mt-32 mb-5">
                 <a
                   href="mailto:alxtim10@gmail.com"
                   className="hover:underlinemb-2 text-center"
