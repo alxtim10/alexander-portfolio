@@ -42,8 +42,8 @@ export default function Home() {
   const start = 0;
   const introDuration = 3;
   const experienceDuration = 1.4;
-  const projectDuration = 0.45;
-  const skillsDuration = 1;
+  const projectDuration = 1;
+  const skillsDuration = 1.1;
 
   const buffer = 1;
 
@@ -51,7 +51,7 @@ export default function Home() {
   const introStart = start + 0;
   const experienceStart = introStart + introDuration + buffer;
   const projectStart = experienceStart + experienceDuration + buffer;
-  const skillsStart = projectStart + skillsDuration + buffer - 0.5;
+  const skillsStart = projectStart + skillsDuration + buffer;
   const end = skillsStart + skillsDuration;
 
   const totalDuration = end - start;
