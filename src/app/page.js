@@ -7,6 +7,7 @@ import ExCard from "@/components/experience/ExperienceCard";
 import HomeTitle from "@/components/home/HomeTitle";
 import AboutMe from "@/components/about/AboutMe";
 import HeadMetaData from "@/components/headmetadata/HeadMetaData";
+import Link from "next/link";
 
 export default function Home() {
   const mainRef = useRef();
@@ -173,7 +174,7 @@ export default function Home() {
             <ParallaxLayer
               sticky={{
                 start: experienceStart + 1,
-                end: projectStart + projectDuration,
+                end: skillsStart + skillsDuration,
               }}
               factor={2.75}
               speed={0.05}
@@ -230,11 +231,13 @@ export default function Home() {
             >
               <div className="w-[25rem]">
                 <div className="overflow-hidden hover:brightness-75 transition-all duration-300 rounded-lg">
-                  <img
-                    src="/images/projects/1.png"
-                    alt=""
-                    className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg h-[8rem] w-[12rem] md:h-[10rem] md:w-auto xl:h-[15rem] bg-gradient-to-br from-blue-300 to-gray-300"
-                  />
+                  <Link href="/projects">
+                    <img
+                      src="/images/projects/1.png"
+                      alt=""
+                      className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg h-[8rem] w-[12rem] md:h-[10rem] md:w-auto xl:h-[15rem] bg-gradient-to-br from-blue-300 to-gray-300"
+                    />
+                  </Link>
                 </div>
                 <p className="mt-2 text-left">Skena Hub</p>
               </div>
@@ -248,11 +251,13 @@ export default function Home() {
             >
               <div className="w-[25rem]">
                 <div className="overflow-hidden hover:brightness-75 transition-all duration-300 rounded-lg">
-                  <img
-                    src="/images/projects/projectG1.png"
-                    alt=""
-                    className="cursor-pointer lg:p-2  transition-all duration-300 rounded-lg h-[8rem] w-[12rem] md:h-[10rem] xl:h-[15rem] md:w-auto bg-gradient-to-br from-orange-200 to-blue-200"
-                  />
+                  <Link href="/projects">
+                    <img
+                      src="/images/projects/projectG1.png"
+                      alt=""
+                      className="cursor-pointer lg:p-2  transition-all duration-300 rounded-lg h-[8rem] w-[12rem] md:h-[10rem] xl:h-[15rem] md:w-auto bg-gradient-to-br from-orange-200 to-blue-200"
+                    />
+                  </Link>
                 </div>
                 <p className="mt-2 text-left">Guitar Cave</p>
               </div>
@@ -266,11 +271,13 @@ export default function Home() {
             >
               <div className="w-[25rem]">
                 <div className="overflow-hidden hover:brightness-75 transition-all duration-300 rounded-lg">
-                  <img
-                    src="/images/projects/3.png"
-                    alt=""
-                    className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg h-[8rem] w-[12rem] md:h-[10rem] xl:h-[15rem] md:w-auto bg-gradient-to-bl from-yellow-200 to-gray-400"
-                  />
+                  <Link href="/projects">
+                    <img
+                      src="/images/projects/3.png"
+                      alt=""
+                      className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg h-[8rem] w-[12rem] md:h-[10rem] xl:h-[15rem] md:w-auto bg-gradient-to-bl from-yellow-200 to-gray-400"
+                    />
+                  </Link>
                 </div>
                 <p className="mt-2 text-left">SIMUDA Guest Book</p>
               </div>
@@ -284,11 +291,13 @@ export default function Home() {
             >
               <div className="w-[25rem]">
                 <div className="overflow-hidden hover:brightness-75 transition-all duration-300 rounded-lg">
-                  <img
-                    src="/images/projects/full.png"
-                    alt=""
-                    className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg h-[6rem] w-[12rem] md:h-[10rem] xl:h-[13rem] md:w-auto bg-gradient-to-tr from-orange-300 to-gray-300"
-                  />
+                  <Link href="/projects">
+                    <img
+                      src="/images/projects/full.png"
+                      alt=""
+                      className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg h-[6rem] w-[12rem] md:h-[10rem] xl:h-[13rem] md:w-auto bg-gradient-to-tr from-orange-300 to-gray-300"
+                    />
+                  </Link>
                 </div>
                 <p className="mt-2 text-left">Angklung Beats</p>
               </div>
@@ -422,7 +431,7 @@ export default function Home() {
                 <div className="flex flex-col justify-center items-center w-full mt-10 xl:mt-32 mb-5">
                   <a
                     href="mailto:alxtim10@gmail.com"
-                    className="hover:underlinemb-2 text-center text-white"
+                    className="hover:underlinemb-2 text-center text-black"
                   >
                     alxtim10@gmail.com
                   </a>
