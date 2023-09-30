@@ -45,7 +45,7 @@ export default function Home() {
   const introDuration = 4;
   const experienceDuration = 1.4;
   const projectDuration = 1;
-  const skillsDuration = 1.1;
+  const skillsDuration = 1.12;
   const buffer = 1;
 
   const introStart = start + 0;
@@ -65,13 +65,13 @@ export default function Home() {
               sticky={{ start: introStart, end: introStart + 1.1 }}
               factor={1.05}
               // className="bg-gradient-to-b from-[#e8e8e8] to-[#7d7d7d]"
-              className="bg-[url('/images/bg3.png')] z-[-90] bg-cover bg-center"
+              className="bg-[url('/images/test1.png')] z-[-90] bg-cover bg-center"
             ></ParallaxLayer>
 
             <ParallaxLayer
               offset={introStart}
               speed={0.4}
-              className="flex flex-col justify-end pb-20"
+              className="flex flex-col justify-end pb-20 text-white"
             >
               <HomeTitle
                 mainRef={mainRef}
@@ -85,13 +85,13 @@ export default function Home() {
               factor={2.75}
               speed={0.05}
               // className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
-              className="bg-[url('/images/bg2.png')] z-[-100] bg-cover bg-center"
+              className="bg-[url('/images/test2.png')] z-[-100] bg-cover bg-center"
             ></ParallaxLayer>
 
             <ParallaxLayer
               offset={introStart + 1}
               speed={0.18}
-              className="flex flex-col justify-center items-center mb-10"
+              className="flex flex-col justify-center items-center mb-10 text-white"
             >
               <AboutMe />
             </ParallaxLayer>
@@ -167,7 +167,7 @@ export default function Home() {
               factor={2.75}
               speed={0.05}
               // className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
-              className="bg-[url('/images/bg4.png')] z-[-100] bg-cover bg-center"
+              className="bg-[url('/images/test3.png')] z-[-100] bg-cover bg-center"
             ></ParallaxLayer>
 
             <ParallaxLayer
@@ -178,7 +178,7 @@ export default function Home() {
               factor={2.75}
               speed={0.05}
               // className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
-              className="bg-[url('/images/bg5.png')] z-[-110] bg-cover bg-center"
+              className="bg-[url('/images/test4.png')] z-[-110] bg-cover bg-center"
             ></ParallaxLayer>
 
             <ParallaxLayer
@@ -303,7 +303,7 @@ export default function Home() {
               <div className="w-[25rem]">
                 <div className="overflow-hidden hover:brightness-75 transition-all duration-300 rounded-lg">
                   <Link href="/projects">
-                    <div className="relative h-[8rem] w-[15rem] md:h-[10rem] md:w-[18rem] xl:h-[15rem] xl:w-[25rem]">
+                    <div className="relative h-[7rem] w-[15rem] md:h-[9rem] md:w-[18rem] xl:h-[12rem] xl:w-[25rem]">
                       <Image
                         src="/images/projects/full.png"
                         alt="AngklungBeats"
@@ -323,13 +323,13 @@ export default function Home() {
               speed={0.18}
               className="flex flex-col justify-center items-center"
             >
-              <h1 className="text-white text-4xl font-outfit font-bold my-10">
+              <h1 className="text-white text-4xl font-outfit font-semibold my-10">
                 skills
               </h1>
               <section className="p-10">
                 <div className="flex flex-col xl:flex-row justify-center items-center gap-5 mx-36">
                   <div className=" opacity-50 mt-5  hover:opacity-100 h-full xl:h-[22rem] 2xl:h-[21rem] bg-none w-[20rem] lg:w-1/2 border-b-4 grayscale hover:grayscale-0 hover:border-b-[10px] transition-all duration-500 border-white">
-                    <h1 className="text-center text-xl font-outfit font-bold mb-5">
+                    <h1 className="text-white text-center text-xl font-outfit font-bold mb-5">
                       Front End
                     </h1>
                     <div className="flex flex-wrap justify-center lg:justify-start items-center gap-5">
@@ -417,7 +417,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="opacity-50 mt-5 hover:opacity-100 h-full xl:h-[22rem] 2xl:h-[21rem] bg-none w-[20rem] lg:w-1/2 border-b-4 grayscale hover:grayscale-0 hover:border-b-[10px] transition-all duration-500 border-white">
-                    <h1 className="text-center text-xl font-outfit font-bold mb-5">
+                    <h1 className="text-white text-center text-xl font-outfit font-bold mb-5">
                       Back End
                     </h1>
                     <div className="flex flex-col items-center">
@@ -464,7 +464,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="opacity-50  mt-5 hover:opacity-100 h-full xl:h-[22rem] 2xl:h-[21rem] bg-none w-[20rem] lg:w-1/2 border-b-4 grayscale hover:grayscale-0 hover:border-b-[10px] transition-all duration-500 border-white">
-                    <h1 className="text-center text-xl font-outfit font-bold mb-5">
+                    <h1 className="text-white text-center text-xl font-outfit font-bold mb-5">
                       Database
                     </h1>
                     <div className="flex flex-col items-center">
@@ -511,10 +511,10 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col justify-center items-center w-full mt-10 xl:mt-32 mb-5">
+                <div className="flex flex-col justify-center items-center w-full mt-10 xl:mt-32 pb-6">
                   <a
                     href="mailto:alxtim10@gmail.com"
-                    className="hover:underlinemb-2 text-center text-black"
+                    className="hover:underlinemb-2 text-center text-white"
                   >
                     alxtim10@gmail.com
                   </a>
