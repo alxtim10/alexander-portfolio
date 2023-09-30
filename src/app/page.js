@@ -242,7 +242,7 @@ export default function Home() {
                     </div>
                   </Link>
                 </div>
-                <p className="mt-2 text-left">Skena Hub</p>
+                <p className="mt-2 text-left text-white">Skena Hub</p>
               </div>
             </ParallaxLayer>
 
@@ -266,7 +266,7 @@ export default function Home() {
                     </div>
                   </Link>
                 </div>
-                <p className="mt-2 text-left">Guitar Cave</p>
+                <p className="mt-2 text-left text-white">Guitar Cave</p>
               </div>
             </ParallaxLayer>
 
@@ -290,7 +290,7 @@ export default function Home() {
                     </div>
                   </Link>
                 </div>
-                <p className="mt-2 text-left">SIMUDA Guest Book</p>
+                <p className="mt-2 text-left text-white">SIMUDA Guest Book</p>
               </div>
             </ParallaxLayer>
 
@@ -314,7 +314,7 @@ export default function Home() {
                     </div>
                   </Link>
                 </div>
-                <p className="mt-2 text-left">Angklung Beats</p>
+                <p className="mt-2 text-left text-white">Angklung Beats</p>
               </div>
             </ParallaxLayer>
 
