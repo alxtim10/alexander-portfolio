@@ -6,7 +6,6 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import ExCard from "@/components/experience/ExperienceCard";
 import HomeTitle from "@/components/home/HomeTitle";
 import AboutMe from "@/components/about/AboutMe";
-import HeadMetaData from "@/components/headmetadata/HeadMetaData";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -59,7 +58,6 @@ export default function Home() {
 
   return (
     <>
-      <HeadMetaData />
       <main className="w-full ">
         <div className="">
           <Parallax pages={totalDuration} ref={mainRef}>
@@ -237,9 +235,9 @@ export default function Home() {
                       <Image
                         src="/images/projects/1.png"
                         alt="SkenaHub"
-                        layout="fill"
-                        objectFit="cover"
+                        fill={true}
                         className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg  bg-gradient-to-br from-blue-300 to-gray-300"
+                        priority
                       />
                     </div>
                   </Link>
@@ -261,9 +259,9 @@ export default function Home() {
                       <Image
                         src="/images/projects/projectG1.png"
                         alt="GuitarCave"
-                        layout="fill"
-                        objectFit="cover"
+                        fill={true}
                         className="cursor-pointer lg:p-2  transition-all duration-300 rounded-lg bg-gradient-to-br from-orange-200 to-blue-200"
+                        priority
                       />
                     </div>
                   </Link>
@@ -285,9 +283,9 @@ export default function Home() {
                       <Image
                         src="/images/projects/3.png"
                         alt="SIMUDAGuestBook"
-                        layout="fill"
-                        objectFit="cover"
+                        fill={true}
                         className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg bg-gradient-to-bl from-yellow-200 to-gray-400"
+                        priority
                       />
                     </div>
                   </Link>
@@ -309,9 +307,9 @@ export default function Home() {
                       <Image
                         src="/images/projects/full.png"
                         alt="AngklungBeats"
-                        layout="fill"
-                        objectFit="cover"
+                        fill={true}
                         className="cursor-pointer lg:p-2 transition-all duration-300 rounded-lg bg-gradient-to-tr from-orange-300 to-gray-300"
+                        priority
                       />
                     </div>
                   </Link>
@@ -339,81 +337,81 @@ export default function Home() {
                         <Image
                           src="/images/stackimg/atom.png"
                           alt="react"
-                          layout="fill"
-                          objectFit="contain"
+                          fill={true}
                           className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          priority
                         />
                       </div>
                       <div className="relative w-20 h-20">
                         <Image
                           src="/images/stackimg/nextjs.png"
                           alt="nextjs"
-                          layout="fill"
-                          objectFit="contain"
+                          fill={true}
                           className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          priority
                         />
                       </div>
                       <div className="relative w-20 h-20">
                         <Image
                           src="/images/stackimg/tailwind.png"
                           alt="tailwindcss"
-                          layout="fill"
-                          objectFit="contain"
+                          fill={true}
                           className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          priority
                         />
                       </div>
                       <div className="relative w-20 h-20">
                         <Image
                           src="/images/stackimg/angular.png"
                           alt="angular"
-                          layout="fill"
-                          objectFit="contain"
+                          fill={true}
                           className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          priority
                         />
                       </div>
                       <div className="relative w-20 h-20">
                         <Image
                           src="/images/stackimg/laravel.png"
                           alt="laravel"
-                          layout="fill"
-                          objectFit="contain"
+                          fill={true}
                           className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          priority
                         />
                       </div>
                       <div className="relative w-20 h-20">
                         <Image
                           src="/images/stackimg/html.png"
                           alt="html"
-                          layout="fill"
-                          objectFit="contain"
+                          fill={true}
                           className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          priority
                         />
                       </div>
                       <div className="relative w-20 h-20">
                         <Image
                           src="/images/stackimg/css.png"
                           alt="css"
-                          layout="fill"
-                          objectFit="contain"
+                          fill={true}
                           className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          priority
                         />
                       </div>
                       <div className="relative w-20 h-20">
                         <Image
                           src="/images/stackimg/javascript.png"
                           alt="js"
-                          layout="fill"
-                          objectFit="contain"
+                          fill={true}
                           className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          priority
                         />
                       </div>
                       <div className="relative w-16 h-16">
                         <Image
                           src="/images/stackimg/typescript.png"
                           alt="ts"
-                          layout="fill"
-                          objectFit="contain"
+                          fill={true}
                           className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                          priority
                         />
                       </div>
                     </div>
@@ -428,18 +426,18 @@ export default function Home() {
                           <Image
                             src="/images/stackimg/net.png"
                             alt="net"
-                            layout="fill"
-                            objectFit="contain"
+                            fill={true}
                             className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                            priority
                           />
                         </div>
                         <div className="relative w-20 h-20">
                           <Image
                             src="/images/stackimg/express.png"
                             alt="express"
-                            layout="fill"
-                            objectFit="contain"
+                            fill={true}
                             className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                            priority
                           />
                         </div>
                       </div>
@@ -448,18 +446,18 @@ export default function Home() {
                           <Image
                             src="/images/stackimg/laravel.png"
                             alt="laravel"
-                            layout="fill"
-                            objectFit="contain"
+                            fill={true}
                             className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                            priority
                           />
                         </div>
                         <div className="relative w-20 h-20">
                           <Image
                             src="/images/stackimg/nodejs.png"
                             alt="nodejs"
-                            layout="fill"
-                            objectFit="contain"
+                            fill={true}
                             className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                            priority
                           />
                         </div>
                       </div>
@@ -475,18 +473,18 @@ export default function Home() {
                           <Image
                             src="/images/stackimg/postgresql.png"
                             alt="postgresql"
-                            layout="fill"
-                            objectFit="contain"
+                            fill={true}
                             className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                            priority
                           />
                         </div>
                         <div className="relative w-20 h-20">
                           <Image
                             src="/images/stackimg/mysql.png"
                             alt="mysql"
-                            layout="fill"
-                            objectFit="contain"
+                            fill={true}
                             className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                            priority
                           />
                         </div>
                       </div>
@@ -495,18 +493,18 @@ export default function Home() {
                           <Image
                             src="/images/stackimg/firebase.png"
                             alt="firebase"
-                            layout="fill"
-                            objectFit="contain"
+                            fill={true}
                             className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                            priority
                           />
                         </div>
                         <div className="relative w-20 h-20">
                           <Image
                             src="/images/stackimg/mongodb.png"
                             alt="mongodb"
-                            layout="fill"
-                            objectFit="contain"
+                            fill={true}
                             className="hover:scale-110 transition-all duration-300 cursor-pointer"
+                            priority
                           />
                         </div>
                       </div>
@@ -526,9 +524,9 @@ export default function Home() {
                         <Image
                           src="/images/footer/linkedin.png"
                           alt="linkedin"
-                          layout="fill"
-                          objectFit="contain"
+                          fill={true}
                           className="grayscale hover:grayscale-0 hover:scale-105 transition-all cursor-pointer"
+                          priority
                         />
                       </div>
                     </a>
@@ -537,9 +535,9 @@ export default function Home() {
                         <Image
                           src="/images/footer/github.png"
                           alt="github"
-                          layout="fill"
-                          objectFit="contain"
+                          fill={true}
                           className="grayscale hover:grayscale-0 hover:scale-105 transition-all cursor-pointer"
+                          priority
                         />
                       </div>
                     </a>

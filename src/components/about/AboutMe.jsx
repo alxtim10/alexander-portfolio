@@ -18,13 +18,13 @@ const AboutMe = () => {
           Keen to contribute technical expertise and drive innovation in a
           professional setting.
         </p>
-        <div className="relative w-40 h-60 md:h-80 md:w-60">
+        <div className="relative w-40 h-56 md:h-80 md:w-56">
           <Image
             src="/images/foto.jpg"
             alt="profile"
-            layout="fill"
-            objectFit="cover"
+            fill={true}
             className="shadow-xl rounded-xl"
+            priority
           />
         </div>
       </div>
