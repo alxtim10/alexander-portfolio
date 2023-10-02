@@ -8,7 +8,6 @@ import HomeTitle from "@/components/home/HomeTitle";
 import AboutMe from "@/components/about/AboutMe";
 import Link from "next/link";
 import Image from "next/image";
-import { Tooltip } from "@nextui-org/react";
 
 export default function Home() {
   const mainRef = useRef();

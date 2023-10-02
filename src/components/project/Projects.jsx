@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useRef } from "react";
 import PagesNavbar from "../../components/navigation/PagesNavbar";
@@ -10,6 +10,7 @@ const Projects = () => {
   const guitarCaveRef = useRef(null);
   const angklungRef = useRef(null);
   const nikeRef = useRef(null);
+  const portfolioRef = useRef(null);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -21,6 +22,37 @@ const Projects = () => {
   return (
     <section>
       <PagesNavbar />
+
+      <div ref={simudaRef}>
+        <div className="pl-5 lg:pl-20">
+          <h1 className="border-b border-black text-4xl font-outfit font-bold w-1/2 lg:w-1/4 mb-2">
+            SIMUDA Guest Book
+          </h1>
+          <p className="text-lg">Event Guest Registration Web</p>
+          <p className="mb-4">Stack : ReactJS + Vite, Tailwind, Firebase</p>
+          <a
+            href="https://simudaguestbook.netlify.app"
+            className="border border-black py-2 px-3 hover:bg-black hover:text-white transition duration-300"
+          >
+            Visit
+          </a>
+        </div>
+        <div className="flex justify-center items-center w-full px-5 lg:pl-20 py-10 gap-5">
+          <div className="flex flex-col w-full gap-5">
+            <img
+              src="/images/projects/projectS1.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
+            <img
+              src="/images/projects/projectS2.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
+          </div>
+          <div className="hidden lg:block w-full"></div>
+        </div>
+      </div>
 
       <div ref={skenaRef}>
         <div className="pl-5 lg:pl-20">
@@ -38,10 +70,26 @@ const Projects = () => {
         </div>
         <div className="flex justify-center items-center w-full px-5 lg:pl-20 py-10 gap-5">
           <div className="flex flex-col w-full gap-5">
-            <img src="/images/projects/projectA1.png" alt="" className="imgCard w-full rounded-xl" />
-            <img src="/images/projects/projectA5.png" alt="" className="imgCard w-full rounded-xl" />
-            <img src="/images/projects/projectA3.png" alt="" className="imgCard w-full rounded-xl" />
-            <img src="/images/projects/projectA4.png" alt="" className="imgCard w-full rounded-xl" />
+            <img
+              src="/images/projects/projectA1.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
+            <img
+              src="/images/projects/projectA5.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
+            <img
+              src="/images/projects/projectA3.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
+            <img
+              src="/images/projects/projectA4.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
           </div>
           <div className="hidden lg:block w-full"></div>
         </div>
@@ -63,31 +111,16 @@ const Projects = () => {
         </div>
         <div className="flex justify-center items-center w-full px-5 lg:pl-20 py-10 gap-5">
           <div className="flex flex-col w-full gap-5">
-            <img src="/images/projects/projectG1.png" alt="" className="imgCard w-full rounded-xl" />
-            <img src="/images/projects/projectG2.png" alt="" className="imgCard w-full rounded-xl" />
-          </div>
-          <div className="hidden lg:block w-full"></div>
-        </div>
-      </div>
-
-      <div ref={simudaRef}>
-        <div className="pl-5 lg:pl-20">
-          <h1 className="border-b border-black text-4xl font-outfit font-bold w-1/2 lg:w-1/4 mb-2">
-            SIMUDA Guest Book
-          </h1>
-          <p className="text-lg">Event Guest Registration Web</p>
-          <p className="mb-4">Stack : ReactJS + Vite, Tailwind, Firebase</p>
-          <a
-            href="https://simudaguestbook.netlify.app"
-            className="border border-black py-2 px-3 hover:bg-black hover:text-white transition duration-300"
-          >
-            Visit
-          </a>
-        </div>
-        <div className="flex justify-center items-center w-full px-5 lg:pl-20 py-10 gap-5">
-          <div className="flex flex-col w-full gap-5">
-            <img src="/images/projects/projectS1.png" alt="" className="imgCard w-full rounded-xl" />
-            <img src="/images/projects/projectS2.png" alt="" className="imgCard w-full rounded-xl" />
+            <img
+              src="/images/projects/projectG1.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
+            <img
+              src="/images/projects/projectG2.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
           </div>
           <div className="hidden lg:block w-full"></div>
         </div>
@@ -109,7 +142,37 @@ const Projects = () => {
         </div>
         <div className="flex justify-center items-center w-full px-5 lg:pl-20 py-10 gap-5">
           <div className="flex flex-col w-full gap-5">
-            <img src="/images/projects/projectV1.png" alt="" className="imgCard w-full rounded-xl" />
+            <img
+              src="/images/projects/projectV1.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
+          </div>
+          <div className="hidden lg:block w-full"></div>
+        </div>
+      </div>
+
+      <div ref={portfolioRef}>
+        <div className="pl-5 lg:pl-20">
+          <h1 className="border-b border-black text-4xl font-outfit font-bold w-1/2 lg:w-1/4 mb-2">
+            Alexander&apos;s Portfolio
+          </h1>
+          <p className="text-lg">My Personal Portfolio Website</p>
+          <p className="mb-4">Stack : NextJS, Tailwind</p>
+          <a
+            href="https://github.com/alxtim10"
+            className="border border-black py-2 px-3 hover:bg-black hover:text-white transition duration-300"
+          >
+            GitHub
+          </a>
+        </div>
+        <div className="flex justify-center items-center w-full px-5 lg:pl-20 py-10 gap-5">
+          <div className="flex flex-col w-full gap-5">
+            <img
+              src="/images/projects/portfolio.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
           </div>
           <div className="hidden lg:block w-full"></div>
         </div>
@@ -131,7 +194,11 @@ const Projects = () => {
         </div>
         <div className="flex justify-center items-center w-full px-5 lg:pl-20 py-10 gap-5">
           <div className="flex flex-col w-full gap-5">
-            <img src="/images/projects/projectN1.png" alt="" className="imgCard w-full rounded-xl" />
+            <img
+              src="/images/projects/projectN1.png"
+              alt=""
+              className="imgCard w-full rounded-xl"
+            />
           </div>
           <div className="hidden lg:block w-full"></div>
         </div>
@@ -140,6 +207,12 @@ const Projects = () => {
       <div className="hidden lg:block z-10 right-5 xl:right-24 2xl:right-56 fixed top-[30%] h-32">
         <h1 className="ml-[4rem] xl:ml-0 text-2xl xl:text-3xl font-outfit font-bold mb-2">
           projects / personal works
+        </h1>
+        <h1
+          onClick={() => scrollToSection(simudaRef)}
+          className="text-2xl font-outfit font-bold ml-20 cursor-pointer mb-2 hover:translate-x-3 transition duration-300"
+        >
+          simuda guest book
         </h1>
         <h1
           onClick={() => scrollToSection(skenaRef)}
@@ -154,16 +227,16 @@ const Projects = () => {
           guitar cave
         </h1>
         <h1
-          onClick={() => scrollToSection(simudaRef)}
-          className="text-2xl font-outfit font-bold ml-20 cursor-pointer mb-2 hover:translate-x-3 transition duration-300"
-        >
-          simuda guest book
-        </h1>
-        <h1
           onClick={() => scrollToSection(angklungRef)}
           className="text-2xl font-outfit font-bold ml-20 cursor-pointer mb-2 hover:translate-x-3 transition duration-300"
         >
           angklung traditional instrument vst plugin
+        </h1>
+        <h1
+          onClick={() => scrollToSection(portfolioRef)}
+          className="text-2xl font-outfit font-bold ml-20 cursor-pointer mb-2 hover:translate-x-3 transition duration-300"
+        >
+          personal portfolio
         </h1>
         <h1
           onClick={() => scrollToSection(nikeRef)}
