@@ -30,7 +30,7 @@ const HomeTitle = ({mainRef, experienceStart, skillsStart}) => {
           </h1>
           <Link href="/projects">
             <h1 className="cursor-pointer hover:-translate-x-2 hover:translate-y-2 hover:text-gray-400 transition-all duration-300">
-              projects
+              see all projects
             </h1>
           </Link>
           <h1

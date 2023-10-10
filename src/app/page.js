@@ -217,9 +217,9 @@ export default function Home() {
               className="p-5 mx-auto flex justify-center items-center"
               style={{ maxWidth: "52em", zIndex: -75 }}
             >
-              <h1 className="text-2xl lg:text-6xl text-center w-100 text-white">
-                projects
-              </h1>
+                <h1 className="text-2xl lg:text-6xl text-center w-100 text-white">
+                  projects
+                </h1>
             </ParallaxLayer>
 
             <ParallaxLayer
