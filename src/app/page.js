@@ -42,7 +42,7 @@ export default function Home() {
   ];
 
   const start = 0;
-  const introDuration = 4;
+  const introDuration = 0.5;
   const experienceDuration = 1.4;
   const projectDuration = 1;
   const skillsDuration = 1.12;
@@ -62,10 +62,16 @@ export default function Home() {
         <div className="">
           <Parallax pages={totalDuration} ref={mainRef}>
             <ParallaxLayer
-              sticky={{ start: introStart, end: introStart + 1.1 }}
-              factor={1.05}
+              sticky={{ start: introStart, end: end}}
+              factor={totalDuration}
               // className="bg-gradient-to-b from-[#e8e8e8] to-[#7d7d7d]"
-              className="bg-[url('/images/test1.png')] z-[-90] bg-cover bg-center"
+              className="bg-[url('/images/mainBG.png')] z-[-10] bg-cover bg-center"
+            ></ParallaxLayer>
+
+            <ParallaxLayer
+              sticky={{ start: introStart, end: end }}
+              // className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
+              className="bg-[url('/images/mainBG2.png')] z-[-100] bg-cover bg-center"
             ></ParallaxLayer>
 
             <ParallaxLayer
@@ -80,12 +86,11 @@ export default function Home() {
               />
             </ParallaxLayer>
 
+
             <ParallaxLayer
-              sticky={{ start: introStart + 1, end: introStart + 3 }}
-              factor={2.75}
-              speed={0.05}
+              sticky={{ start: introStart + 1, end: end}}
               // className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
-              className="bg-[url('/images/test2.png')] z-[-100] bg-cover bg-center"
+              className="bg-[url('/images/mainBG3.png')] z-[-90] bg-cover bg-center"
             ></ParallaxLayer>
 
             <ParallaxLayer
@@ -97,102 +102,25 @@ export default function Home() {
             </ParallaxLayer>
 
             <ParallaxLayer
-              sticky={{ start: introStart + 2.15, end: introStart + 3 }}
-              className="flex-center"
-              style={{ width: "33%" }}
-            >
-              <Card
-                style={{
-                  borderRadius: 0,
-                  width: "100%",
-                  height: "100%",
-                  background: `#303030`,
-                  backgroundPosition: "center",
-                  backgroundBlendMode: "darken",
-                  backgroundSize: "cover",
-                  color: "white",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              ></Card>
-            </ParallaxLayer>
-
-            <ParallaxLayer
-              sticky={{ start: introStart + 2.75, end: introStart + 3.5 }}
-              className="flex-center"
-              style={{ width: "34%", marginLeft: "33%" }}
-            >
-              <Card
-                style={{
-                  borderRadius: 0,
-                  width: "100%",
-                  height: "100%",
-                  background: `#1f1e1e`,
-                  backgroundPosition: "center",
-                  backgroundBlendMode: "darken",
-                  backgroundSize: "cover",
-                  color: "white",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              ></Card>
-            </ParallaxLayer>
-
-            <ParallaxLayer
-              sticky={{ start: introStart + 3, end: introStart + 4 }}
-              className="flex-center"
-              style={{ width: "33%", marginLeft: "67%" }}
-            >
-              <Card
-                style={{
-                  borderRadius: 0,
-                  width: "100%",
-                  height: "100%",
-                  background: `#171616`,
-                  backgroundPosition: "bottom 50% right 25%",
-                  backgroundBlendMode: "darken",
-                  backgroundSize: "cover",
-                  color: "white",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              ></Card>
-            </ParallaxLayer>
-
-            <ParallaxLayer
-              sticky={{ start: introStart + 3, end: experienceStart + 1 }}
-              factor={2.75}
-              speed={0.05}
+              sticky={{ start: introStart + 1, end: end}}
               // className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
-              className="bg-[url('/images/test3.png')] z-[-100] bg-cover bg-center"
+              className="bg-[url('/images/mainBG3.png')] z-[-90] bg-cover bg-center"
             ></ParallaxLayer>
 
             <ParallaxLayer
               sticky={{
-                start: experienceStart + 1,
-                end: skillsStart + skillsDuration,
-              }}
-              factor={2.75}
-              speed={0.05}
-              // className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
-              className="bg-[url('/images/test4.png')] z-[-110] bg-cover bg-center"
-            ></ParallaxLayer>
-
-            <ParallaxLayer
-              sticky={{
-                start: experienceStart + 0.75,
+                start: experienceStart + 0.5,
                 end: experienceStart + 0.95,
               }}
               speed={0.05}
               className="lg:pt-10"
             >
-              <h1 className="text-center text-4xl text-indigo-100 lg:mt-20">
+              <h1 className="text-center text-4xl text-[#64ffDA] lg:mt-20 ">
                 experience x education
               </h1>
             </ParallaxLayer>
+
+            
 
             <ParallaxLayer
               offset={experienceStart + 1}
@@ -208,6 +136,13 @@ export default function Home() {
                 </div>
               </section>
             </ParallaxLayer>
+            
+            <ParallaxLayer
+              sticky={{ start: projectStart, end: end}}
+              // className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
+              className="bg-[url('/images/mainBG4.png')] z-[-90] bg-cover bg-center"
+            ></ParallaxLayer>
+
 
             <ParallaxLayer
               sticky={{
@@ -217,9 +152,9 @@ export default function Home() {
               className="p-5 mx-auto flex justify-center items-center"
               style={{ maxWidth: "52em", zIndex: -75 }}
             >
-                <h1 className="text-2xl lg:text-6xl text-center w-100 text-white">
-                  projects
-                </h1>
+              <h1 className="text-2xl lg:text-6xl text-center w-100 text-white">
+                projects
+              </h1>
             </ParallaxLayer>
 
             <ParallaxLayer
@@ -271,7 +206,7 @@ export default function Home() {
             </ParallaxLayer>
 
             <ParallaxLayer
-              offset={projectStart + 0.75}
+              offset={projectStart + 1}
               speed={0.35}
               factor={1}
               className="bg-transparent ml-5 md:ml-[2rem] lg:ml-[7rem]"
@@ -298,7 +233,7 @@ export default function Home() {
               offset={projectStart + 1}
               speed={0.6}
               factor={1}
-              className="bg-transparent ml-36 md:ml-56 lg:ml-[35rem] 2xl:ml-[65rem]"
+              className="bg-transparent ml-44 md:ml-56 lg:ml-[35rem] 2xl:ml-[65rem]"
             >
               <div className="w-[25rem]">
                 <div className="overflow-hidden hover:brightness-75 transition-all duration-300 rounded-lg">
@@ -319,11 +254,17 @@ export default function Home() {
             </ParallaxLayer>
 
             <ParallaxLayer
+              sticky={{ start: skillsStart, end: end}}
+              // className="bg-gradient-to-b from-[#7c7c7c] to-[#303030]"
+              className="bg-[url('/images/mainBG5.png')] z-[-90] bg-cover bg-center"
+            ></ParallaxLayer>
+
+            <ParallaxLayer
               offset={skillsStart}
               speed={0.18}
               className="flex flex-col justify-center items-center"
             >
-              <h1 className="text-white text-4xl font-outfit font-semibold my-10">
+              <h1 className="text-4xl font-outfit font-semibold my-10 text-[#64ffDA]">
                 skills
               </h1>
               <section className="p-10">

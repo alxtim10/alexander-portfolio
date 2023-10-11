@@ -4,7 +4,7 @@ import React from "react";
 const AboutMe = () => {
   return (
     <>
-      <h1 className="text-center text-4xl font-outfit font-bold my-10">
+      <h1 className="text-center text-4xl font-outfit font-bold my-10 text-[#64ffDA]">
         about me
       </h1>
       <div className="w-full flex flex-col lg:flex-row justify-around items-center gap-10 lg:gap-0 font-outfit">
