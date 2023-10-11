@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Outfit } from "next/font/google";
+import { NTR } from "next/font/google";
 
-const mont = Outfit({ subsets: ["latin"] });
+const mont = NTR({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata = {
   title: "Alexander's Portfolio",

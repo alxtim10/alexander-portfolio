@@ -9,7 +9,7 @@ const AboutMe = () => {
       </h1>
       <div className="w-full flex flex-col lg:flex-row justify-around items-center gap-10 lg:gap-0 font-outfit">
         <p className="w-80 text-lg text-center lg:text-left">
-          Computer Science fresh graduate with a foundation in software
+          Computer Science fresh graduate from <span className="text-[#64ffDA]">BINUS University</span> with a foundation in software
           engineering and one year of hands-on internship experience.
           <br />
           Proficient at collaborating with interdisciplinary teams and

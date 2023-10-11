@@ -6,7 +6,7 @@ const HomeTitle = ({mainRef, experienceStart, skillsStart}) => {
     <>
       <div className="flex justify-around items-center font-outfit mx-8 ">
         <h1 className=" text-2xl md:text-4xl lg:pl-9">
-          Hi, I&apos;m Alexander
+          Hi, I&apos;m <span className="text-[#64ffDA]">Alexander</span>
         </h1>
         <div className="w-60 md:w-[15rem] lg:w-[30rem]">
           <p className="text-xl md:text-2xl lg:text-4xl lg:ml-[10rem]">
